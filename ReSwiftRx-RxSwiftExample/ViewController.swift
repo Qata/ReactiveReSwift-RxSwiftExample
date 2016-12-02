@@ -7,19 +7,36 @@
 //
 
 import UIKit
+import ReactiveReSwift
+import RxSwift
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var counterLabel: UILabel!
+    
+    private let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let disposable = mainStore.observable.asObservable().map { String($0.counter) }.subscribe(onNext: { [weak self] value in
+            self?.counterLabel.text = value
+        })
+        disposeBag.insert(disposable)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // when either button is tapped, an action is dispatched to the store
+    // in order to update the application state
+    @IBAction func downTouch(_ sender: AnyObject) {
+        // This is just to demonstrate that you can dispatch signals directly,
+        // don't actually do this, this is bad code
+        mainStore.dispatch(Observable.just(AppAction.decrease))
     }
-
-
+    
+    @IBAction func upTouch(_ sender: AnyObject) {
+        // This is just to demonstrate that you can dispatch signals directly,
+        // don't actually do this, this is bad code
+        mainStore.dispatch(Observable.just(AppAction.increase))
+    }
 }
+
 
