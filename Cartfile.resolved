@@ -1,1 +1,2 @@
-github "Qata/ReactiveReSwift" "31ee6fb72194e3b16e7d880e6bfa1b7522cf36b2"
+github "ReSwift/ReactiveReSwift" "3.0.1"
+github "ReactiveX/RxSwift" "3.1.0"

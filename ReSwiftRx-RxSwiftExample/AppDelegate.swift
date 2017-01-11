@@ -10,10 +10,9 @@ import UIKit
 import ReactiveReSwift
 import RxSwift
 
-let middleware = Middleware<AppState> { _, _, action in
+let middleware = Middleware<AppState>().sideEffect { _, _, action in
     print("Received action:")
-    return action
-}.map { _, _, action in
+}.map { _, action in
     print(action)
     return action
 }
