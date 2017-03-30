@@ -1,6 +1,6 @@
 //
-//  ReSwiftRxBridge.swift
-//  ReSwiftRx-RxSwiftExample
+//  ReactiveReSwiftBridge.swift
+//  ReactiveReSwift-RxSwiftExample
 //
 //  Created by Charlotte Tortorella on 1/12/16.
 //  Copyright © 2016 ReSwift. All rights reserved.

@@ -12,10 +12,9 @@
 		9E3474A41DEFE11B006620EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E3474A21DEFE11B006620EA /* Main.storyboard */; };
 		9E3474A61DEFE11B006620EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E3474A51DEFE11B006620EA /* Assets.xcassets */; };
 		9E3474A91DEFE11B006620EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E3474A71DEFE11B006620EA /* LaunchScreen.storyboard */; };
-		9E3474B31DEFE3BA006620EA /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E3474B11DEFE3BA006620EA /* RxSwift.framework */; };
 		9E3474BA1DEFE46F006620EA /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E3474B11DEFE3BA006620EA /* RxSwift.framework */; };
 		9E3474BB1DEFE46F006620EA /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9E3474B11DEFE3BA006620EA /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9E3474BE1DEFE4BA006620EA /* ReSwiftRxBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3474BD1DEFE4BA006620EA /* ReSwiftRxBridge.swift */; };
+		9E3474BE1DEFE4BA006620EA /* ReactiveReSwiftBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3474BD1DEFE4BA006620EA /* ReactiveReSwiftBridge.swift */; };
 		9E4774A41DF1193D002EBA8B /* ReactiveReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4774A31DF1193D002EBA8B /* ReactiveReSwift.framework */; };
 		9E4774A51DF1193D002EBA8B /* ReactiveReSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9E4774A31DF1193D002EBA8B /* ReactiveReSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9E4774C21DF14766002EBA8B /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4774BD1DF14766002EBA8B /* Actions.swift */; };
@@ -39,7 +38,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9E34749B1DEFE11B006620EA /* ReSwiftRx-RxSwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReSwiftRx-RxSwiftExample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E34749B1DEFE11B006620EA /* ReactiveReSwift-RxSwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReactiveReSwift-RxSwiftExample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E34749E1DEFE11B006620EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E3474A01DEFE11B006620EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9E3474A31DEFE11B006620EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,7 +46,7 @@
 		9E3474A81DEFE11B006620EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E3474AA1DEFE11B006620EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E3474B11DEFE3BA006620EA /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
-		9E3474BD1DEFE4BA006620EA /* ReSwiftRxBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReSwiftRxBridge.swift; sourceTree = "<group>"; };
+		9E3474BD1DEFE4BA006620EA /* ReactiveReSwiftBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveReSwiftBridge.swift; sourceTree = "<group>"; };
 		9E4774A31DF1193D002EBA8B /* ReactiveReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveReSwift.framework; path = Carthage/Build/iOS/ReactiveReSwift.framework; sourceTree = "<group>"; };
 		9E4774BD1DF14766002EBA8B /* Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
 		9E4774BF1DF14766002EBA8B /* CounterReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
@@ -60,7 +59,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E3474BA1DEFE46F006620EA /* RxSwift.framework in Frameworks */,
-				9E3474B31DEFE3BA006620EA /* RxSwift.framework in Frameworks */,
 				9E4774A41DF1193D002EBA8B /* ReactiveReSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,7 +71,7 @@
 			children = (
 				9E4774A31DF1193D002EBA8B /* ReactiveReSwift.framework */,
 				9E3474B11DEFE3BA006620EA /* RxSwift.framework */,
-				9E34749D1DEFE11B006620EA /* ReSwiftRx-RxSwiftExample */,
+				9E34749D1DEFE11B006620EA /* ReactiveReSwift-RxSwiftExample */,
 				9E34749C1DEFE11B006620EA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,18 +79,18 @@
 		9E34749C1DEFE11B006620EA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9E34749B1DEFE11B006620EA /* ReSwiftRx-RxSwiftExample.app */,
+				9E34749B1DEFE11B006620EA /* ReactiveReSwift-RxSwiftExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9E34749D1DEFE11B006620EA /* ReSwiftRx-RxSwiftExample */ = {
+		9E34749D1DEFE11B006620EA /* ReactiveReSwift-RxSwiftExample */ = {
 			isa = PBXGroup;
 			children = (
 				9E4774BC1DF14766002EBA8B /* Actions */,
 				9E4774BE1DF14766002EBA8B /* Reducers */,
 				9E4774C01DF14766002EBA8B /* State */,
-				9E3474BD1DEFE4BA006620EA /* ReSwiftRxBridge.swift */,
+				9E3474BD1DEFE4BA006620EA /* ReactiveReSwiftBridge.swift */,
 				9E34749E1DEFE11B006620EA /* AppDelegate.swift */,
 				9E3474A01DEFE11B006620EA /* ViewController.swift */,
 				9E3474A21DEFE11B006620EA /* Main.storyboard */,
@@ -100,7 +98,7 @@
 				9E3474A71DEFE11B006620EA /* LaunchScreen.storyboard */,
 				9E3474AA1DEFE11B006620EA /* Info.plist */,
 			);
-			path = "ReSwiftRx-RxSwiftExample";
+			path = "ReactiveReSwift-RxSwiftExample";
 			sourceTree = "<group>";
 		};
 		9E4774BC1DF14766002EBA8B /* Actions */ = {
@@ -130,9 +128,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9E34749A1DEFE11B006620EA /* ReSwiftRx-RxSwiftExample */ = {
+		9E34749A1DEFE11B006620EA /* ReactiveReSwift-RxSwiftExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9E3474AD1DEFE11B006620EA /* Build configuration list for PBXNativeTarget "ReSwiftRx-RxSwiftExample" */;
+			buildConfigurationList = 9E3474AD1DEFE11B006620EA /* Build configuration list for PBXNativeTarget "ReactiveReSwift-RxSwiftExample" */;
 			buildPhases = (
 				9E3474971DEFE11B006620EA /* Sources */,
 				9E3474981DEFE11B006620EA /* Frameworks */,
@@ -143,9 +141,9 @@
 			);
 			dependencies = (
 			);
-			name = "ReSwiftRx-RxSwiftExample";
+			name = "ReactiveReSwift-RxSwiftExample";
 			productName = "ReSwiftRx-RxSwiftExample";
-			productReference = 9E34749B1DEFE11B006620EA /* ReSwiftRx-RxSwiftExample.app */;
+			productReference = 9E34749B1DEFE11B006620EA /* ReactiveReSwift-RxSwiftExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -155,7 +153,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = ReSwift;
 				TargetAttributes = {
 					9E34749A1DEFE11B006620EA = {
@@ -164,7 +162,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9E3474961DEFE11B006620EA /* Build configuration list for PBXProject "ReSwiftRx-RxSwiftExample" */;
+			buildConfigurationList = 9E3474961DEFE11B006620EA /* Build configuration list for PBXProject "ReactiveReSwift-RxSwiftExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -177,7 +175,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9E34749A1DEFE11B006620EA /* ReSwiftRx-RxSwiftExample */,
+				9E34749A1DEFE11B006620EA /* ReactiveReSwift-RxSwiftExample */,
 			);
 		};
 /* End PBXProject section */
@@ -200,7 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E3474BE1DEFE4BA006620EA /* ReSwiftRxBridge.swift in Sources */,
+				9E3474BE1DEFE4BA006620EA /* ReactiveReSwiftBridge.swift in Sources */,
 				9E4774C31DF14766002EBA8B /* CounterReducer.swift in Sources */,
 				9E4774C21DF14766002EBA8B /* Actions.swift in Sources */,
 				9E4774C41DF14766002EBA8B /* AppState.swift in Sources */,
@@ -249,6 +247,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -298,6 +297,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -330,7 +330,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "ReSwiftRx-RxSwiftExample/Info.plist";
+				INFOPLIST_FILE = "ReactiveReSwift-RxSwiftExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ReSwift.ReSwiftRx-RxSwiftExample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,7 +346,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "ReSwiftRx-RxSwiftExample/Info.plist";
+				INFOPLIST_FILE = "ReactiveReSwift-RxSwiftExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ReSwift.ReSwiftRx-RxSwiftExample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,7 +357,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9E3474961DEFE11B006620EA /* Build configuration list for PBXProject "ReSwiftRx-RxSwiftExample" */ = {
+		9E3474961DEFE11B006620EA /* Build configuration list for PBXProject "ReactiveReSwift-RxSwiftExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9E3474AB1DEFE11B006620EA /* Debug */,
@@ -366,7 +366,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9E3474AD1DEFE11B006620EA /* Build configuration list for PBXNativeTarget "ReSwiftRx-RxSwiftExample" */ = {
+		9E3474AD1DEFE11B006620EA /* Build configuration list for PBXNativeTarget "ReactiveReSwift-RxSwiftExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9E3474AE1DEFE11B006620EA /* Debug */,

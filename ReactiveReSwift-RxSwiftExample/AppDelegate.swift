@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  ReSwiftRx-RxSwiftExample
+//  ReactiveReSwift-RxSwiftExample
 //
 //  Created by Charlotte Tortorella on 1/12/16.
 //  Copyright © 2016 ReSwift. All rights reserved.
@@ -20,7 +20,6 @@ let middleware = Middleware<AppState>().sideEffect { _, _, action in
 // The global application store, which is responsible for managing the appliction state.
 let mainStore = Store(
     reducer: counterReducer,
-    stateType: AppState.self,
     observable: Variable(AppState()),
     middleware: middleware
 )
